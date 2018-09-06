@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff8383d6a46510c458a7036f5be440a2
+guid: 6f77d768dd2658549aa9d00ff35ad6fe
 TextureImporter:
   fileIDToRecycleName:
     21300000: Turtle_0
@@ -83,28 +83,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,17 +91,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 28
-        y: 144
-        width: 239
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 167
+        width: 296
+        height: 182
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89b2be1570eed7340bbb15fa19705bfa
+      spriteID: 4ad8c5cebde8ce34aa696dfb38db3183
       vertices: []
       indices: 
       edges: []
@@ -132,18 +110,18 @@ TextureImporter:
       name: Turtle_1
       rect:
         serializedVersion: 2
-        x: 69
-        y: 40
-        width: 55
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 41.000004
+        width: 80
+        height: 69
+      alignment: 9
+      pivot: {x: 0.808642, y: 0.8459178}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a0e2227d11b4af4691e555524cdcc96
+      spriteID: 97b1c45baad3bc54fb68677cf9b151d9
       vertices: []
       indices: 
       edges: []
@@ -152,18 +130,18 @@ TextureImporter:
       name: Turtle_2
       rect:
         serializedVersion: 2
-        x: 175
-        y: 12
-        width: 63
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 203.00002
+        y: 8
+        width: 88.999985
+        height: 142
+      alignment: 9
+      pivot: {x: 0.553101, y: 0.9118782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ada2c661cc362a4d8e40025d44518d4
+      spriteID: 9b052afbdd846aa4890b308ab67143f3
       vertices: []
       indices: 
       edges: []
@@ -171,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f6da73512234db242adef1243eac29bd
+    spriteID: 6ec187edd03c33a48b07925b52d5b426
     vertices: []
     indices: 
     edges: []
@@ -179,6 +157,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636717770617276747
   assetBundleName: 
   assetBundleVariant: 

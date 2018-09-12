@@ -94,7 +94,7 @@ e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 0300b2708aa7d8638a9715d76dcf863a Cinemachine.dll:Cinemachine.CinemachineExternalCamera
 3119ca65a0fd21459b807b4b54f78bc4 Cinemachine.dll:Cinemachine.CinemachineStoryboard
-a85a117b3a646af5f6513b6ef4dab8ab Assembly-CSharp.dll:.Player
+67335b94993bc7d1459b013cb1add6aa Assembly-CSharp.dll:.Player
 486cd95c82d8305219c352c06b776e1f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9e61f3535f3c55760a1cedfbd114f4af UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 754551afe4f2531f58476bf14c510657 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -223,3 +223,4 @@ ebc31dc7976aeffcc84e23b049016bd0 Assembly-CSharp.dll:.Follow
 0076ec15dda030330bfcebd65a836408 Cinemachine.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 5f6f9b1bdbfe6ed5ee40451bad77f5ea Cinemachine.dll:Cinemachine.CinemachineClearShot
 8626f95cb7adc1622b08704fdc31e515 Assembly-CSharp.dll:.SkinnedMeshCombiner
+1f54ee96467e9e3f55eac2b05132cc58 Assembly-CSharp.dll:.Rede

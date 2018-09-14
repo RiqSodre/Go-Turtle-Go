@@ -19,10 +19,6 @@ public class Rede : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (player)
-        {
-            print("Bateu");
-            Destroy(gameObject);
-        }
+         Destroy(gameObject);
     }
 }

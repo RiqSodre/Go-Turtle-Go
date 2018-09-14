@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4604146117588754}
   - component: {fileID: 212438043178483934}
   - component: {fileID: 70697365998628966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: aguaviva
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1441229395825312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.618306, y: 1.4890883, z: -0.5047757}
+  m_LocalPosition: {x: 49.290844, y: -3.7804883, z: -0.5047757}
   m_LocalScale: {x: 0.21995842, y: 0.21995842, z: 0.21995842}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,8 +53,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 5.69, y: 8}
+  m_Offset: {x: 0, y: 0.79}
+  m_Size: {x: 5.55, y: 6.12}
   m_Direction: 0
 --- !u!212 &212438043178483934
 SpriteRenderer:

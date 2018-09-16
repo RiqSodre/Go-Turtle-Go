@@ -70,11 +70,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4956337758475260}
-  - component: {fileID: 114159600626555328}
   - component: {fileID: 50234187602602840}
+  - component: {fileID: 60501285301500730}
+  - component: {fileID: 114159600626555328}
+  - component: {fileID: 114191832914767142}
   m_Layer: 8
   m_Name: TURTLE
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -505,7 +507,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1211210097150532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.16, y: -1.15, z: 0}
+  m_LocalPosition: {x: -11.66, y: 2.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4375715704689412}
@@ -545,13 +547,62 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!60 &60501285301500730
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211210097150532}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.3410963, y: 0.7061294}
+      - {x: 0.27950782, y: 0.45852616}
+      - {x: 0.13206165, y: 0.36908987}
+      - {x: -0.33164105, y: 0.3672701}
+      - {x: -0.69584656, y: 0.28958234}
+      - {x: -1.1888328, y: -0.051324725}
+      - {x: -1.615945, y: -0.54003793}
+      - {x: -1.398506, y: -0.7272236}
+      - {x: -1.751439, y: -1.1464665}
+      - {x: -1.1591443, y: -1.1064125}
+      - {x: -1.0702868, y: -0.7566423}
+      - {x: -0.145251, y: -0.6066288}
+      - {x: -0.45581788, y: -1.3466971}
+      - {x: -0.39211243, y: -1.5187104}
+      - {x: -0.014039621, y: -1.2819937}
+      - {x: 0.28232414, y: -0.8208113}
+      - {x: 0.35127768, y: -0.24039707}
+      - {x: 0.4471806, y: 0.10253084}
+      - {x: 0.57499045, y: 0.1612505}
+      - {x: 0.89640796, y: 0.12242079}
+      - {x: 1.1258491, y: 0.22220612}
+      - {x: 1.193347, y: 0.40174276}
+      - {x: 1.1533282, y: 0.64057636}
+      - {x: 0.9089925, y: 0.8754107}
+      - {x: 0.46512228, y: 0.8817712}
 --- !u!60 &60924612967747532
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1148738883450612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -697,11 +748,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energia: 0
-  folego: 0
-  velocidade: 0.25
-  speedY: 30
-  currentSpeed: 0
-  negativeSpeed: -8
+  velocidadeX: 0.25
+  velocidadeY: 30
+  velocidadeAtual: 0
+--- !u!114 &114191832914767142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211210097150532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67cf59d258ebe4d4fb241fa432a9a814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aguaViva: {fileID: 0}
 --- !u!114 &114300735276621960
 MonoBehaviour:
   m_ObjectHideFlags: 1

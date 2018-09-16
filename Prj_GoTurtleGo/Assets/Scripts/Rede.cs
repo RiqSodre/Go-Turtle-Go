@@ -6,7 +6,7 @@ public class Rede : MonoBehaviour {
 
     Rigidbody2D rb;
     public GameObject player;
-    public float speed = 3;
+    private float speed = 3;
 
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
@@ -17,8 +17,11 @@ public class Rede : MonoBehaviour {
         rb.velocity = rb.velocity.normalized * speed;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D col)
     {
-         Destroy(gameObject);
+        if (player.CompareTag("Player"))
+        {
+            Destroy(player);
+        }
     }
 }

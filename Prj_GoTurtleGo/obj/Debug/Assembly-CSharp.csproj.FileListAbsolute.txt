@@ -168,3 +168,9 @@ C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\obj\Debug\Assembly-CSharp.dll
 C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\obj\Debug\Assembly-CSharp.pdb
 C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\Cinemachine.dll
 C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\com.unity.cinemachine.editor.dll
+C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\Unity.2D.Common.Editor.dll
+C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\Unity.2D.Common.Runtime.dll
+C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\Unity.2D.SpriteShape.Editor.dll
+C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\Unity.2D.SpriteShape.Runtime.dll
+C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\Unity.InternalAPIEditorBridge.001.dll
+C:\Users\Lufus\Desktop\Go-Turtle-Go\Prj_GoTurtleGo\Temp\bin\Debug\Unity.InternalAPIEngineBridge.001.dll

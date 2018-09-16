@@ -6,27 +6,36 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour {
 
     #region Váriaveis
-    public int energia;
-    public int folego;
-    public float velocidade = 0.25f;
+    public int energia = 0;
+    public float velocidadeX = 0.25f;
 
-    public float speedY = 30f; 
-    public float currentSpeed = 0.0f;
-    public float negativeSpeed = -8f;
+    public float velocidadeY = 30f; 
+    public float velocidadeAtual = 0f;
+   // public float velocidadeNegativa = -8f;
     #endregion
 
     void Update () {
-        transform.position += new Vector3(currentSpeed, Input.acceleration.x * speedY, 0)*Time.deltaTime;
+        DontLock();
 
-        if(currentSpeed < 7)
-            currentSpeed += velocidade;
+        transform.position += new Vector3(velocidadeAtual, Input.acceleration.x * velocidadeY, 0)*Time.deltaTime;
+
+        if(velocidadeAtual < 7 && energia < 5)
+        {
+            velocidadeAtual += velocidadeX;
+        }
+        
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    //void OnTriggerEnter2D(Collider2D col)
+    //{
+    //    if (col.CompareTag("Inimigo"))
+    //    {
+    //        velocidadeAtual = velocidadeNegativa;
+    //    }
+    //}
+
+     void DontLock()
     {
-        if (col.CompareTag("Inimigo"))
-        {
-            currentSpeed = negativeSpeed;
-        }
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 }

@@ -7,22 +7,17 @@ public class Player : MonoBehaviour {
 
     #region Váriaveis
     public int energia = 0;
-    public float velocidadeX = 0.25f;
+    public float velocidadeX = -2f;
 
     public float velocidadeY = 30f; 
-    public float velocidadeAtual = 0f;
-   // public float velocidadeNegativa = -8f;
+    public float velocidadeAtual = 6f;
     #endregion
 
     void Update () {
-        DontLock();
-
+        DontBlock();
+   
         transform.position += new Vector3(velocidadeAtual, Input.acceleration.x * velocidadeY, 0)*Time.deltaTime;
-
-        if(velocidadeAtual < 7 && energia < 5)
-        {
-            velocidadeAtual += velocidadeX;
-        }
+        
         
     }
 
@@ -34,7 +29,7 @@ public class Player : MonoBehaviour {
     //    }
     //}
 
-     void DontLock()
+     void DontBlock()
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }

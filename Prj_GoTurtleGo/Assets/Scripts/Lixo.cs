@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Lixo : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    Player player = new Player();
+
+    void OnColliderEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            player.velocidadeAtual = -player.velocidadeX;
+        }
+    }
 }

@@ -20,11 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4674442206776962}
   - component: {fileID: 212762293502952512}
-  - component: {fileID: 61607189636211990}
   - component: {fileID: 50366240815292404}
-  m_Layer: 0
+  - component: {fileID: 114965953356827512}
+  - component: {fileID: 60349991423384938}
+  m_Layer: 13
   m_Name: Latinha
-  m_TagString: Untagged
+  m_TagString: Latinha
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,9 +36,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1961418321767198}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8, y: 11, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.16, y: 9, z: -0.5047757}
+  m_LocalScale: {x: 0.5047757, y: 0.5047757, z: 0.5047757}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61607189636211990
-BoxCollider2D:
+--- !u!60 &60349991423384938
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -84,9 +85,31 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.19, y: 0.42}
+      - {x: 0.13, y: 0.44}
+      - {x: -0.14999999, y: 0.44}
+      - {x: -0.29, y: 0.35999998}
+      - {x: -0.31, y: 0.28}
+      - {x: -0.31, y: 0.01}
+      - {x: -0.26999998, y: -0.39999998}
+      - {x: -0.12, y: -0.44}
+      - {x: 0.11, y: -0.44}
+      - {x: 0.26999998, y: -0.35}
+      - {x: 0.28, y: -0.26}
+      - {x: 0.28, y: 0.26}
+--- !u!114 &114965953356827512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1961418321767198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f22874060d61ae47917548b52e6fabf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212762293502952512
 SpriteRenderer:
   m_ObjectHideFlags: 1

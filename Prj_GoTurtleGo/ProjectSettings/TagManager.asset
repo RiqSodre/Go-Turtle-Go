@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Inimigo
   - AguaViva
+  - Latinha
   layers:
   - Default
   - TransparentFX
@@ -20,7 +20,7 @@ TagManager:
   - CamLimit
   - Web
   - Ground
-  - 
+  - Lixo
   - 
   - 
   - 

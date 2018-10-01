@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4674442206776962}
   - component: {fileID: 212762293502952512}
   - component: {fileID: 50366240815292404}
-  - component: {fileID: 114965953356827512}
   - component: {fileID: 60349991423384938}
   m_Layer: 13
   m_Name: Latinha
@@ -99,17 +98,6 @@ PolygonCollider2D:
       - {x: 0.26999998, y: -0.35}
       - {x: 0.28, y: -0.26}
       - {x: 0.28, y: 0.26}
---- !u!114 &114965953356827512
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1961418321767198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f22874060d61ae47917548b52e6fabf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212762293502952512
 SpriteRenderer:
   m_ObjectHideFlags: 1

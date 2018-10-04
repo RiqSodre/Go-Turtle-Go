@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
     public bool comeu;
-
     public int energia = 0;
     public float velocidadeX = 2f;
 
@@ -16,7 +15,7 @@ public class Player : MonoBehaviour {
         DontBlock();
         //Movimento do acelerometro.
         transform.position += new Vector3(velocidadeAtual, Input.acceleration.x * velocidadeY, 0)*Time.deltaTime;
-
+        
         //Energia.
         if (energia < 5 && comeu)
         {

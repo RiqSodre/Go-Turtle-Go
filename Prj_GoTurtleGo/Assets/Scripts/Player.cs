@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
     public bool comeu;
+
     public int energia = 0;
     public float velocidadeX = 2f;
 
@@ -15,7 +16,7 @@ public class Player : MonoBehaviour {
         DontBlock();
         //Movimento do acelerometro.
         transform.position += new Vector3(velocidadeAtual, Input.acceleration.x * velocidadeY, 0)*Time.deltaTime;
-        
+
         //Energia.
         if (energia < 5 && comeu)
         {
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("AguaViva"))
         {
-            GameManager.Instance.AddPoints(1);
+            GameManager.Instance.AddPoints(10);
             Destroy(col.gameObject);
         }
         else if(col.gameObject.CompareTag("Latinha"))

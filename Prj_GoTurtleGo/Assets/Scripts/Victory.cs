@@ -7,6 +7,7 @@ public class Victory : MonoBehaviour {
 
     public GameObject panel;
     public GameObject player;
+    public GameObject energiaT;
     public Text fraseTexto, scoreText;
 
     public string[] frases;

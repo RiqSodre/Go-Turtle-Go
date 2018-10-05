@@ -7,7 +7,7 @@ public class Musicplayer : MonoBehaviour {
     public AudioSource audioSource;
     // Use this for initialization
     void Start () {
-        audioSource = FindObjectOfType<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         audioSource.loop = false;
     }
 	

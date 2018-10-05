@@ -34,7 +34,7 @@ public class Player : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("AguaViva"))
         {
-            GameManager.Instance.AddPoints(10);
+            GameManager.Instance.Eat(1);
             Destroy(col.gameObject);
         }
         else if(col.gameObject.CompareTag("Latinha"))

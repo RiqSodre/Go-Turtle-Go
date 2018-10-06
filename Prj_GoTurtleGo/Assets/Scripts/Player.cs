@@ -10,13 +10,19 @@ public class Player : MonoBehaviour {
     public float velocidadeX = 2f;
 
     public float velocidadeY = 30f; 
-    public float velocidadeAtual = 6f;
+    public float velocidadeAtual = 0;
 
     void Update () {
         DontBlock();
         //Movimento do acelerometro.
         transform.position += new Vector3(velocidadeAtual, Input.acceleration.x * velocidadeY, 0)*Time.deltaTime;
 
+        //Velocidade.
+        if (velocidadeAtual < 7)
+        {
+            velocidadeAtual += 1;
+        }
+            
         //Energia.
         if (energia < 5 && comeu)
         {
@@ -25,7 +31,7 @@ public class Player : MonoBehaviour {
 
             if (energia == 5)
             {
-                velocidadeAtual += 5f;
+                velocidadeAtual = 5f;
             }
         }
     }
@@ -39,16 +45,12 @@ public class Player : MonoBehaviour {
         }
         else if(col.gameObject.CompareTag("Latinha"))
         {
-            velocidadeAtual -= velocidadeAtual;
+            velocidadeAtual = -3;
         }
-        //else if (col.gameObject.CompareTag("Pedra"))
-        //{
-
-        //}
-        //else if (col.gameObject.CompareTag("Sacola"))
-        //{
-
-        //}
+        else if (col.gameObject.CompareTag("Sacola"))
+        {
+            velocidadeAtual = 1;
+        }
     }
 
     //Função DontBlock permite que a tela não entre em repouso. 

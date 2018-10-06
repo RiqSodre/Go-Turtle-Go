@@ -536,7 +536,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Energia: '
+  m_Text: 'Energia: 0'
 --- !u!222 &66227745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1786,7 +1786,7 @@ Prefab:
     - target: {fileID: 114159600626555328, guid: d15bbf097f892d14f8eab2ef5658ac0e,
         type: 2}
       propertyPath: velocidadeAtual
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 50234187602602840, guid: d15bbf097f892d14f8eab2ef5658ac0e,
         type: 2}

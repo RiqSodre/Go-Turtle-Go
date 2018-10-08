@@ -7,7 +7,7 @@ public class Rede : MonoBehaviour {
 
     Rigidbody2D rb;
     public GameObject player;
-    private float speed = 4;
+    public float speed = 6;
 
 	void Start () {
         rb = GetComponent<Rigidbody2D>();

@@ -21,6 +21,7 @@ public class Menu : MonoBehaviour {
 
     public void RestartGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Stage 1");
     }
 
@@ -36,6 +37,8 @@ public class Menu : MonoBehaviour {
         menu.SetActive(true);
         play.SetActive(true);
         pause.SetActive(false);
+        Musicplayer ms = new Musicplayer();
+        ms.audioSource.Stop();
     }
 
     public void ResumeGame()
@@ -44,5 +47,7 @@ public class Menu : MonoBehaviour {
         menu.SetActive(false);
         play.SetActive(false);
         pause.SetActive(true);
+        Musicplayer ms = new Musicplayer();
+        ms.audioSource.Play();
     }
 }

@@ -18,8 +18,8 @@ public class Musicplayer : MonoBehaviour {
             audioSource.clip = GetRandomClip();
             audioSource.Play();
         }
-		
 	}
+
     private AudioClip GetRandomClip()
     {
         return swim[Random.Range(0, swim.Length)];

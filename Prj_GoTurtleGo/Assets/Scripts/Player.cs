@@ -15,6 +15,14 @@ public class Player : MonoBehaviour {
     public float velocidadeY = 30f; 
     public float velocidadeAtual = 0;
 
+    public AudioClip[] eating;
+    public AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.loop = false;
+    }
     private void Awake()
     {
         energy.Initialize();
@@ -24,7 +32,7 @@ public class Player : MonoBehaviour {
     void Update () {
         DontBlock();
         //Movimento do acelerometro.
-        transform.position += new Vector3(velocidadeAtual, Input.acceleration.x * velocidadeY, 0)*Time.deltaTime;
+        transform.position += new Vector3(velocidadeAtual, -Input.acceleration.x * velocidadeY, 0) * Time.deltaTime;
 
         //Velocidade.
         if (velocidadeAtual < 7)
@@ -45,15 +53,17 @@ public class Player : MonoBehaviour {
         {
             energy.CurrentVal += 10;
             GameManager.Instance.Eat(1);
+            audioSource.clip = GetRandomClip();
+            audioSource.Play();
             Destroy(col.gameObject);
         }
-        else if(col.gameObject.CompareTag("Latinha"))
+        if(col.gameObject.CompareTag("Latinha"))
         {
-            velocidadeAtual = -3;
+            velocidadeAtual = -5;
         }
-        else if (col.gameObject.CompareTag("Sacola"))
+        if (col.gameObject.CompareTag("Sacola"))
         {
-            velocidadeAtual = 1;
+            velocidadeAtual = 0;
         }
     }
 
@@ -61,5 +71,9 @@ public class Player : MonoBehaviour {
     void DontBlock()
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+    }
+    private AudioClip GetRandomClip()
+    {
+        return eating[Random.Range(0, eating.Length)];
     }
 }

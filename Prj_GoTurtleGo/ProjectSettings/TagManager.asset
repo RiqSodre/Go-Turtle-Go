@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AguaViva
   - Latinha
+  - Sacola
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Web
   - Ground
   - Lixo
-  - 
+  - Limit
   - 
   - 
   - 

@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour {
     public void Eat(int value)
     {
         energy += value;
-        energyText.text = "Energia: " + energy.ToString();
 
         AddPoints(value * 10);
     }

@@ -6,32 +6,21 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
     [SerializeField]
-    private float fillAmount;
+    private Stat energy;
 
-    [SerializeField]
-    private Image content;
+    public GameObject dash;
     
-    public float MaxValue { get; set; }
-    
-    public bool comeu;
-
-    public int age;
-    public int energia = 0;
     public float velocidadeX = 2f;
 
     public float velocidadeY = 30f; 
     public float velocidadeAtual = 0;
 
-    public GameObject dash;
+    private void Awake()
+    {
+        energy.Initialize();
+        energy.CurrentVal = 0;
+    }
     
-    //public float Value
-    //{
-    //    set
-    //    {
-    //        fillAmount = Map(value, 0, MaxValue, 0, 1);
-    //    }
-    //}
-
     void Update () {
         DontBlock();
         //Movimento do acelerometro.
@@ -44,20 +33,9 @@ public class Player : MonoBehaviour {
         }
             
         //Energia.
-        if (energia < 5 && comeu)
+        if (energy.CurrentVal == energy.MaxVal)
         {
-            
-            energia += 1;
-            comeu = false;
-            //HandleBar();
-
             dash.SetActive(true);
-
-            if (energia == 5)
-            {
-                dash.SetActive(true);
-                velocidadeAtual = 5f;
-            }
         }
     }
 
@@ -65,6 +43,7 @@ public class Player : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("AguaViva"))
         {
+            energy.CurrentVal += 10;
             GameManager.Instance.Eat(1);
             Destroy(col.gameObject);
         }
@@ -83,17 +62,4 @@ public class Player : MonoBehaviour {
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
-    
-    //public void HandleBar()
-    //{
-    //    if(fillAmount != content.fillAmount)
-    //    {
-    //        content.fillAmount = fillAmount;
-    //    }
-    //}
-
-    //private float Map(float value,float inMin, float inMax, float outMin, float outMax)
-    //{
-    //    return (value - inMin) * (outMax - outMin) / (inMax = inMin) + outMin;
-    //}
 }

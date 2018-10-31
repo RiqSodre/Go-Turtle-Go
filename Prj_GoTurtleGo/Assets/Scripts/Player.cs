@@ -76,4 +76,12 @@ public class Player : MonoBehaviour {
     {
         return eating[Random.Range(0, eating.Length)];
     }
+
+    public void Dash()
+    {
+        velocidadeAtual = 10;
+
+        energy.CurrentVal = 0;
+        dash.SetActive(false);
+    }
 }

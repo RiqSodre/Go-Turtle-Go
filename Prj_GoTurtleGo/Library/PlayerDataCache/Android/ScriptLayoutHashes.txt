@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Lufus/Desktop/Go Turtle Go.apk
+C:/Users/Lufus/Desktop/Go Turtle Go Att.apk
 SceneListBegin?
 Assets/Scenes/Stage 0.unity
 Assets/Scenes/Stage 1.unity
@@ -234,3 +234,4 @@ d652d8700089edcd24e6bef90b51cc63 Assembly-CSharp.dll:.Rede
 0076ec15dda030330bfcebd65a836408 Cinemachine.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 5f6f9b1bdbfe6ed5ee40451bad77f5ea Cinemachine.dll:Cinemachine.CinemachineClearShot
 8626f95cb7adc1622b08704fdc31e515 Assembly-CSharp.dll:.SkinnedMeshCombiner
+461bbb708b6f64abcfc45613549eb649 Assembly-CSharp.dll:.Cans

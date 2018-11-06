@@ -11,18 +11,21 @@ public class Player : MonoBehaviour {
     public GameObject dash;
     
     public float velocidadeX = 2f;
-
     public float velocidadeY = 30f; 
     public float velocidadeAtual = 0;
 
     public AudioClip[] eating;
     public AudioSource audioSource;
 
+    float ver, hor;
+    Vector2 direction, velocity;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.loop = false;
     }
+
     private void Awake()
     {
         energy.Initialize();
@@ -72,6 +75,7 @@ public class Player : MonoBehaviour {
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
+
     private AudioClip GetRandomClip()
     {
         return eating[Random.Range(0, eating.Length)];
@@ -80,7 +84,6 @@ public class Player : MonoBehaviour {
     public void Dash()
     {
         velocidadeAtual = 10;
-
         energy.CurrentVal = 0;
         dash.SetActive(false);
     }

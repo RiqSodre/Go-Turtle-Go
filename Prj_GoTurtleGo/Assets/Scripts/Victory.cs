@@ -23,6 +23,8 @@ public class Victory : MonoBehaviour {
 
     private void OnTriggerEnter2D()
     {
+        Player pl = new Player();
+        pl.dash.SetActive(false);
         Destroy(player);
         panel.SetActive(true);
         fraseTexto.text = frases[Random.Range(0, frases.Length - 1)];

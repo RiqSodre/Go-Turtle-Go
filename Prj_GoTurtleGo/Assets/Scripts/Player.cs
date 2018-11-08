@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
     public float velocidadeY = 30f; 
     public float velocidadeAtual = 0;
 
+    public float maxVelHorizontal = 7;
+
     public AudioClip[] eating;
     public AudioSource audioSource;
 
@@ -38,7 +40,7 @@ public class Player : MonoBehaviour {
         transform.position += new Vector3(velocidadeAtual, -Input.acceleration.x * velocidadeY, 0) * Time.deltaTime;
 
         //Velocidade.
-        if (velocidadeAtual < 7)
+        if (velocidadeAtual < maxVelHorizontal)
         {
             velocidadeAtual += 1;
         }

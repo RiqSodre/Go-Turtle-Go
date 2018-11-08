@@ -23,7 +23,7 @@ public class Rede : MonoBehaviour {
         if (player.CompareTag("Player"))
         {
             Destroy(player);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("Game Over");
         }
     }
 }

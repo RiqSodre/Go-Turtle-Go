@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Rede : MonoBehaviour {
 
     Rigidbody2D rb;
-    public GameObject player;
     public float speed = 6;
 
 	void Start () {
@@ -20,10 +19,10 @@ public class Rede : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (player.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
-            Destroy(player);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Destroy(col.gameObject);
+            SceneManager.LoadScene("Game Over");
         }
     }
 }

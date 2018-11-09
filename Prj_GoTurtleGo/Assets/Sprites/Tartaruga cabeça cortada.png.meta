@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 09cb2387cfae36040b96c8f181962bc9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "Tartaruga cabe\xE7a cortada_0"
+    21300002: "Tartaruga cabe\xE7a cortada_1"
+    21300004: "Tartaruga cabe\xE7a cortada_2"
+    21300006: "Tartaruga cabe\xE7a cortada_3"
+    21300008: "Tartaruga cabe\xE7a cortada_4"
+    21300010: "Tartaruga cabe\xE7a cortada_5"
+    21300012: "Tartaruga cabe\xE7a cortada_6"
+    21300014: "Tartaruga cabe\xE7a cortada_7"
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_0"
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 284
+        width: 80
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3db0716c0da154ea4b8e0571db3469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_1"
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 253
+        width: 106
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49514565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c0e090e2193824faab2437f9ad160b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_2"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 258
+        width: 106
+        height: 97
+      alignment: 9
+      pivot: {x: 0.509434, y: 0.49484533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7134ac8efe4a422478e6680706d769ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_3"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 171
+        width: 102
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4ef2ac737c0824da5c6cdf20639e61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_4"
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 162
+        width: 106
+        height: 97
+      alignment: 9
+      pivot: {x: 0.509434, y: 0.49484533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174eadf0ff016104f8801f356721260b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_5"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 166
+        width: 106
+        height: 97
+      alignment: 9
+      pivot: {x: 0.509434, y: 0.49484533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb9ac631e0a1ed4893ec06bae029c98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_6"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 240
+        height: 147
+      alignment: 9
+      pivot: {x: 0.50208336, y: 0.50340134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb511c8da154f894ea9600873af6abb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tartaruga cabe\xE7a cortada_7"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 14
+        width: 89
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49647886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c126f28d4416149914334eac9ad247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6dbd2884494e1004fabe7a5331ad4935
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636773166560000000
+  assetBundleName: 
+  assetBundleVariant: 

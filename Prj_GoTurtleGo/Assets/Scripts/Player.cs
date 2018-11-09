@@ -9,19 +9,24 @@ public class Player : MonoBehaviour {
     private Stat energy;
 
     public GameObject dash;
-    
+
     public float velocidadeX = 2f;
     public float velocidadeY = 30f; 
     public float velocidadeAtual = 0;
 
+    public float maxVelHorizontal = 7;
+
     public AudioClip[] eating;
-    public AudioSource audioSource;
+
+    AudioSource audioSource;
+    Animator animator;
 
     float ver, hor;
     Vector2 direction, velocity;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         audioSource.loop = false;
     }
@@ -38,7 +43,7 @@ public class Player : MonoBehaviour {
         transform.position += new Vector3(velocidadeAtual, -Input.acceleration.x * velocidadeY, 0) * Time.deltaTime;
 
         //Velocidade.
-        if (velocidadeAtual < 7)
+        if (velocidadeAtual < maxVelHorizontal)
         {
             velocidadeAtual += 1;
         }
@@ -59,14 +64,17 @@ public class Player : MonoBehaviour {
             audioSource.clip = GetRandomClip();
             audioSource.Play();
             Destroy(col.gameObject);
+            animator.SetTrigger("Food");
         }
-        if(col.gameObject.CompareTag("Latinha"))
+        else if(col.gameObject.CompareTag("Latinha"))
         {
             velocidadeAtual = -5;
+            animator.SetTrigger("Pain");
         }
-        if (col.gameObject.CompareTag("Sacola"))
+        else if (col.gameObject.CompareTag("Sacola"))
         {
             velocidadeAtual = 0;
+            animator.SetTrigger("Pain");
         }
     }
 

@@ -8,27 +8,31 @@ public class Menu : MonoBehaviour {
     public GameObject pause;
     public GameObject play;
     
-    public void PlayGame()
+    public void LoadScene(string cena)
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Stage 1");
+        SceneManager.LoadScene(cena);
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void GoToMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
     {
         Application.Quit();
-    }
-
-    public void RestartGame()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("Stage 1");
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("Stage 0");
-        Time.timeScale = 1;
     }
 
     public void PauseGame()

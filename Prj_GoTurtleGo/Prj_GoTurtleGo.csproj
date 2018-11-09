@@ -356,12 +356,18 @@
     <Compile Include="Assets\Anima2D\Lib\Scripts\SpriteMesh.cs" />
     <Compile Include="Assets\Anima2D\Lib\Scripts\SpriteMeshAnimation.cs" />
     <Compile Include="Assets\Anima2D\Lib\Scripts\SpriteMeshInstance.cs" />
+    <Compile Include="Assets\Scripts\BarScript.cs" />
+    <Compile Include="Assets\Scripts\Clicksound.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\InstanciateCans.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Musicplayer.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Rede.cs" />
+    <Compile Include="Assets\Scripts\SoundCanister.cs" />
+    <Compile Include="Assets\Scripts\Stat.cs" />
     <Compile Include="Assets\Scripts\Victory.cs" />
+    <Compile Include="Assets\Scripts\VolumeSlider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Anima2D\Examples\Shaders\Unlit-Alpha-Cull-off.shader" />

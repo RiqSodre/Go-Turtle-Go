@@ -2,7 +2,8 @@ Android
 PlayerPath?
 C:/Users/Lufus/Desktop/Go Turtle Go Att.apk
 SceneListBegin?
-Assets/Scenes/Stage 0.unity
+Assets/Scenes/Menu.unity
+Assets/Scenes/SelecaoFase.unity
 Assets/Scenes/Stage 1.unity
 Assets/Scenes/Game Over.unity
 SceneListEnd?
@@ -27,6 +28,7 @@ dacc89ee07231106c62c4de7a81f2157 Assembly-CSharp.dll:.Clicksound
 22928088f519404a35a28eeefb31fb4b Cinemachine.dll:Cinemachine.CinemachineFollowZoom
 ffe4864ab6a3ff8a3679754994213a81 Cinemachine.dll:Cinemachine.CinemachineFixedSignal
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
+870a5b39c7b212b286bf71ed95a166fb Assembly-CSharp.dll:.InstanciateCans
 b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
 0087fb1efba4e24732e91ff17af020ee Assembly-CSharp.dll:UnityChan.SpringManager
 3d06f41c12c805d6680a0f771758459a Cinemachine.dll:Cinemachine.CinemachineCollisionImpulseSource
@@ -98,7 +100,7 @@ e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 0300b2708aa7d8638a9715d76dcf863a Cinemachine.dll:Cinemachine.CinemachineExternalCamera
 3119ca65a0fd21459b807b4b54f78bc4 Cinemachine.dll:Cinemachine.CinemachineStoryboard
-15c96a4023b7692f816c9fa90712b8c2 Assembly-CSharp.dll:.Player
+19bb24ccb28ac18f29f9b0b88fa2399b Assembly-CSharp.dll:.Player
 486cd95c82d8305219c352c06b776e1f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9e61f3535f3c55760a1cedfbd114f4af UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 754551afe4f2531f58476bf14c510657 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -231,7 +233,8 @@ c4ef312ac9e852da9ca3d02d4e4cec53 Assembly-CSharp.dll:Anima2D.PoseManager
 486cd95c82d8305219c352c06b776e1f Cinemachine.dll:Cinemachine.CinemachineHardLockToTarget
 ebc31dc7976aeffcc84e23b049016bd0 Assembly-CSharp.dll:.Follow
 91d196e57e9f811e7f6f9d2486fcce3e Assembly-CSharp.dll:Anima2D.IkCCD2D
-d652d8700089edcd24e6bef90b51cc63 Assembly-CSharp.dll:.Rede
+d3baf945a28bf6b4a4706c8193e7459e Assembly-CSharp.dll:.Rede
 0076ec15dda030330bfcebd65a836408 Cinemachine.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 5f6f9b1bdbfe6ed5ee40451bad77f5ea Cinemachine.dll:Cinemachine.CinemachineClearShot
 8626f95cb7adc1622b08704fdc31e515 Assembly-CSharp.dll:.SkinnedMeshCombiner
+1a98f1c038e236ed9c7e0f5d711ca64f Assembly-CSharp.dll:.LevelLoader

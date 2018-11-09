@@ -27,7 +27,7 @@ public class Victory : MonoBehaviour {
         pl.dash.SetActive(false);
         Destroy(player);
         panel.SetActive(true);
-        fraseTexto.text = frases[Random.Range(0, frases.Length - 1)];
+        fraseTexto.text = frases[Random.Range(0, frases.Length)];
         StartCoroutine(Points());
     }
 }

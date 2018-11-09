@@ -8,12 +8,6 @@ public class Menu : MonoBehaviour {
     public GameObject pause;
     public GameObject play;
     
-    public void LoadScene(string cena)
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(cena);
-    }
-
     public void ReloadScene()
     {
         Time.timeScale = 1;

@@ -76,7 +76,6 @@ public class Player : MonoBehaviour {
         else if (col.gameObject.CompareTag("Limit"))
         {
             velocidadeAtual = 2;
-            animator.SetTrigger("");
         }
     }
 

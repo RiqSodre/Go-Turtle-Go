@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Victory : MonoBehaviour {
-
+    
     public GameObject panel;
-    public GameObject player;
+    public GameObject dash;
+    public GameObject pause;
+    public GameObject energy;
     public GameObject energiaT;
     public Text fraseTexto, scoreText;
 
@@ -21,13 +23,18 @@ public class Victory : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D()
+    private void OnCollisionEnter2D()
     {
-        Player pl = new Player();
-        pl.dash.SetActive(false);
-        Destroy(player);
-        panel.SetActive(true);
+        Active();
         fraseTexto.text = frases[Random.Range(0, frases.Length)];
         StartCoroutine(Points());
+    }
+
+    void Active()
+    {
+        panel.SetActive(true);
+        dash.SetActive(false);
+        energy.SetActive(false);
+        pause.SetActive(false);
     }
 }
